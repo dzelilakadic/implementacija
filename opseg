@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
-void calFun(int x, int x1)
+void calFun(int z, int y)
 {
   int cf, a;
   a=0;
-  for(int i=x;i<x1+1;i++){
+  for(int i=z;i<y+1;i++){
     a+=1;
     cf=i*i+2*i-5;
     cout<<"Riješenje: "<<a<<" gdje "<<i<<" je: "<<cf<<endl;
