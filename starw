@@ -1,0 +1,39 @@
+#include<iostream>
+#include<string>
+using namespace std;
+void name(string yourname, string lastname, string mom, string city){
+string name1,city1,sw;
+name1=yourname.substr(0,3);
+city1=city.substr(0,2);
+sw=name1+city1;
+
+string name2, city2, surname;
+
+name2=mom.substr(0,2);
+city2=city.substr(0,3);
+
+surname=name2+city2;
+
+cout<<"Tvoje Star Wars ime:"<<sw<<" "<<surname<<endl;
+}
+
+
+int main()
+{
+  string yourname,lastname,mom,city;
+  cout<<"Ime:";
+  cin>>yourname;
+  cout<<"Prezime:";
+  cin>>lastname;
+
+  cout<<"Majcino djevojacko prezime:";
+  cin>>mom;
+  cout<<"Grad rodjenja:";
+  cin>>city;
+  cout<<endl;
+  
+
+  name(yourname, lastname, mom, city);
+
+
+}
