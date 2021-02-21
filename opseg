@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+void calFun(int x, int x1)
+{
+  int cf, a;
+  a=0;
+  for(int i=x;i<x1+1;i++){
+    a+=1;
+    cf=i*i+2*i-5;
+    cout<<"Riješenje: "<<a<<" gdje "<<i<<" je: "<<cf<<endl;
+  }
+}
+
+int main()
+{
+  int b, c;
+
+  resume:
+  cout<<"POCETAK OPSEGA: ";
+  cin>>b;
+  cout<<"KRAJ OPSEGA: ";
+  cin>>c;
+
+  if(b>c || b==c){
+    cout<<"ERROR! Try again";
+    cout<<endl;
+    goto resume;
+    
+  }
+  else{
+    calFun(b,c);
+  }
+
+
+return 0;
+}
